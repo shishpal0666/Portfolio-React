@@ -1,12 +1,26 @@
+import { BrowserRouter, Routes, Route } from "react-router";
+import { useEffect } from "react";
+import "./App.css";
+import Body from "./components/Body";
+import Home from "./components/Home";
+import Resume from "./components/Resume";
+import Error from "./components/Error";
 
+const App = () => {
 
-function App() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }, []);
 
   return (
-    <div className="flex flex-col items-center">
-      <h1 className="text-blue-900 text-2xl">Shishpal Portfolio </h1>
-    </div>
-  )
-}
+    <BrowserRouter basename="/">
+        <Routes path="/" element={<Body />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/*" element={<Error />} />
+        </Routes>
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;
