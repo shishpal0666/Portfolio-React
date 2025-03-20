@@ -10,7 +10,7 @@ const Home = () => {
       <section className="flex-1 mt-10 pl-10">
         <div className="flex flex-col items-start justify-start gap-2 mb-9">
           <span className="text-lg font-medium">Hi There, I'm</span>
-          <h2 className="text-4xl font-medium text-teal-600">Priyanshi Maheshwari</h2>
+          <h2 className="text-4xl font-medium text-teal-600">Shishpal Polampally</h2>
           <span className="text-2xl font-normal text-pink-600">
             <Type />
           </span>
