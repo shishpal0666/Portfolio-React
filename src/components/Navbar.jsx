@@ -49,11 +49,11 @@ const Navbar = ({ toggle }) => {
             </li>
             <li className="h-full">
               <NavLink 
-                to="/experience" 
+                to="/project" 
                 className="text-gray-900 hover:text-rose-600 px-4 py-2"
                 onClick={() => setActiveLink("")}
               >
-                Experience
+                Projects
               </NavLink>
             </li>
             <li className="h-full">
