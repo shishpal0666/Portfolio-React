@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  @media screen and (max-width: 600px) {
+  
+    .react-pdf__Page__canvas {
+      width: 306px !important;
+      height: 396px !important;
+    }
+  }
