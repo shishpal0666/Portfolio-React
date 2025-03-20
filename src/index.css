@@ -1,17 +1,36 @@
 @import "tailwindcss";
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+  .react-pdf__Page__canvas {
+    width: 306px !important;
+    height: 396px !important;
   }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  @media screen and (max-width: 600px) {
-  
-    .react-pdf__Page__canvas {
-      width: 306px !important;
-      height: 396px !important;
-    }
-  }
+}
+
+.tech-icon {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+  padding: 30px 40px;
+  color: rgb(28, 54, 54);
+  transition: all 0.3s ease;
+}
+
+.tech-icon svg {
+  width: 50px;
+  height: auto;
+}
+
+.tooltip[data-tooltip-id] {
+  background-color: white;
+  color: rgb(28, 54, 54);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
